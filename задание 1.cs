@@ -15,7 +15,7 @@ namespace ConsoleApp4
             int ans = 0;
             for (int i = 0; i < n; i++)
             {
-                int curr = Convert.ToInt32(ConsoleReadLine());
+                int curr = Convert.ToInt32(Console.ReadLine());
                 if (curr < 0) ans++;
             }
             Console.WriteLine(ans);
