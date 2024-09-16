@@ -12,13 +12,25 @@ namespace ConsoleApp4
         static void Main(string[] args)
         {
             int n = Convert.ToInt32(Console.ReadLine());
-            int ans = 0;
-            for (int i = 0; i < n; i++)
+            int max_1 = Convert.ToInt32(Console.ReadLine());
+            int max_2 = -100000;
+            for (int i = 0; i < n - 1; i++)
             {
                 int curr = Convert.ToInt32(Console.ReadLine());
-                if (curr < 0) ans++;
+                if (curr > max_1)
+                {
+                    max_2 = max_1;
+                    max_1 = curr;
+                }
+                else
+                {
+                    if (max_2 < curr)
+                    {
+                        max_2 = curr;
+                    }
+                }
             }
-            Console.WriteLine(ans);
+            Console.WriteLine(max_2);
         }
     }
 }
