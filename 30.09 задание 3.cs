@@ -10,7 +10,7 @@ namespace ConsoleApp7
 
     {
         static void Main(string[] args) {
-            /*Необходимо определить максимальную сумму подпоследовательности из четных чисел.(на отр. и полож. числах)*/
+            /*3.Необходимо определить максимальную сумму подпоследовательности из четных чисел.(на отр. и полож. числах)*/
             int n = int.Parse(Console.ReadLine());
 
             int firstElement = int.Parse(Console.ReadLine());
