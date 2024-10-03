@@ -13,7 +13,7 @@ namespace ConsoleApp4
         {
             int n = Convert.ToInt32(Console.ReadLine());
             int max_1 = Convert.ToInt32(Console.ReadLine());
-            int max_2 = -100000;
+            int max_2 = int.MinValue;
             for (int i = 0; i < n - 1; i++)
             {
                 int curr = Convert.ToInt32(Console.ReadLine());
