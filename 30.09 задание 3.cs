@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +9,8 @@ namespace ConsoleApp7
     internal class задача_3
 
     {
-        static void Main(string[] args) {
+        static void Main(string[] args)
+        {
             /*3.Необходимо определить максимальную сумму подпоследовательности из четных чисел.(на отр. и полож. числах)*/
             int n = int.Parse(Console.ReadLine());
 
@@ -18,8 +19,8 @@ namespace ConsoleApp7
 
 
             int currSm = Math.Abs(firstElement) % 2 == 0 ? firstElement : 0;
-            maxSm = Math.Max(currSm, maxSm);
-            bool evenHere = Math.Abs(firstElement) % 2 == 0 ? true : false;
+            
+            bool evenHere = Math.Abs(firstElement) % 2 == 0;
             for (int i = 0; i < n - 1; i++)
             {
                 int secondElement = int.Parse(Console.ReadLine());
@@ -27,10 +28,11 @@ namespace ConsoleApp7
                 {
                     evenHere = true;
                     currSm += secondElement;
-                    maxSm = Math.Max(maxSm, currSm);
+                    if (i == n-2) maxSm = Math.Max(currSm, maxSm);
                 }
                 else
                 {
+                    
                     if (Math.Abs(firstElement) % 2 == 0) maxSm = Math.Max(maxSm, currSm);
                     currSm = 0;
                 }
