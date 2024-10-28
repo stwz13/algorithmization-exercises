@@ -9,6 +9,7 @@ namespace ConsoleApp6
 {
     internal class Program
     {
+        /*2.Найти точки минимакса (минимум в строке и максимум в столбце или минимум в столбце и максимум в строке)*/
         static bool firstVariant(int [,]arr, int str, int stlb)
         {
             int m = arr.GetUpperBound(1)+1;
