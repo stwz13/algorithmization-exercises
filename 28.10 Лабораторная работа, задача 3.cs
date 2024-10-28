@@ -8,6 +8,7 @@ namespace ConsoleApp6
 {
     internal class Задача_3
     {
+        /*3.Определить равные строки*/
         static int p(int[,]arr, int str)
         {
             int n = arr.GetUpperBound(0) + 1;
