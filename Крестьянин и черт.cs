@@ -16,7 +16,8 @@ namespace ConsoleApp6
 
             int max_n = int.Parse(Console.ReadLine());
             ulong ans = 0;
-            for (int z = 1; z < ((int)Math.Log(max_n) / Math.Log(2) + 2); z++)
+            int n = (int)(Math.Log(max_n) / Math.Log(2) + 2)
+            for (int z = 1; z < n; z++)
             {
                 int d = (int)(Math.Pow(2, z) - 1);
                 ans += (ulong)(max_n / d);
