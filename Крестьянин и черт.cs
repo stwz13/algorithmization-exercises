@@ -11,7 +11,7 @@ namespace ConsoleApp6
         
         static void Main(string[] args)
         {
-
+            Console.WriteLine("Входные данные");
             int max_n = int.Parse(Console.ReadLine());
             ulong ans = 0;
             int n = (int)(Math.Log(max_n) / Math.Log(2) + 2);
@@ -20,7 +20,7 @@ namespace ConsoleApp6
                 int d = (int)(Math.Pow(2, z) - 1);
                 ans += (ulong)(max_n / d);
             }
-            Console.WriteLine(ans);
+            Console.WriteLine($"Выходные данные: {ans}");
         }
     }
 }
