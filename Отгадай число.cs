@@ -13,7 +13,7 @@ namespace ConsoleApp6
         
         static void Main(string[] args)
         {
-            
+            Console.WriteLine("Входные данные");
             int n = int.Parse(Console.ReadLine());
             int sm = 0;
             int k = 1;
@@ -41,7 +41,7 @@ namespace ConsoleApp6
             int r = int.Parse(Console.ReadLine());
             sm = r - sm;
             int ans = sm / k;
-            Console.WriteLine(ans);
+            Console.WriteLine($"Выходные данные:{ans}");
 
         }
     }
