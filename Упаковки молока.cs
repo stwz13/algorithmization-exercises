@@ -10,6 +10,7 @@ namespace ConsoleApp6
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Входные данные");
             int n = int.Parse(Console.ReadLine());
             int number = -1;
             double minPrice = int.MaxValue;
@@ -41,7 +42,7 @@ namespace ConsoleApp6
                 }
                 else if (milkPrice == minPrice) number = Math.Min(number, i + 1);
             }
-            Console.WriteLine($"{number} {minPrice:0.00}");
+            Console.WriteLine($"Выходные данные {number} {minPrice:0.00}");
         }
     }
 }
