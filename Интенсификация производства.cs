@@ -43,13 +43,13 @@ namespace ConsoleApp6
         static void Main(string[] args)
         {
 
-
+            Console.WriteLine("Входные данные");
             string data1 = Console.ReadLine();
             string data2 = Console.ReadLine();
             ulong begin = Convert.ToUInt16((Console.ReadLine()));
             ulong workDays = allDays(data2) - allDays(data1) + 1;
             ulong result = ((2 * begin + workDays - 1) * workDays) / 2;
-            Console.WriteLine(result);
+            Console.WriteLine($"Выходные данные: {result}");
 
         }
     }
