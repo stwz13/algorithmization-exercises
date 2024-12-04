@@ -12,7 +12,7 @@ namespace ConsoleApp3
         {
             //Определить наибольшую длину подпоследовательности из символов abc (подпоследовательность может быть неполной и оканчиваться на a или ab)
             var s = Console.ReadLine();
-            s = s.Replace("abc", "*") + " ";
+            s = s.Replace("abc", "*") + "  ";
             int mx = 0;
             int curr = 0;
             for (int i = 0; i < s.Length; i++)
