@@ -23,9 +23,10 @@ namespace ConsoleApp3
         public bool isLate(string time)
         {
             string time1 = Time;
-
-            if (int.Parse(time1.Substring(0, 2)) > int.Parse(time.Substring(0, 2))) return true;
-            else if (int.Parse(time1.Substring(3, 2)) > int.Parse(time.Substring(3, 2)) && int.Parse(time1.Substring(0, 2)) == int.Parse(time.Substring(0, 2))) return true;
+            int hours = int.Parse(time1.Substring(0, 2));
+            int minuts = int.Parse(time1.Substring(3, 2));
+            if (hours > int.Parse(time.Substring(0, 2))) return true;
+            else if (minuts > int.Parse(time.Substring(3, 2)) && hours == int.Parse(time.Substring(0, 2))) return true;
             else return false;
         }
         public void Print()
