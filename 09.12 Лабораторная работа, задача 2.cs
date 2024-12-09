@@ -25,7 +25,7 @@ namespace ConsoleApp3
             string time1 = Time;
 
             if (int.Parse(time1.Substring(0, 2)) > int.Parse(time.Substring(0, 2))) return true;
-            else if (int.Parse(time1.Substring(3, 2)) > int.Parse(time.Substring(3, 2)) && int.Parse(time1.Substring(0, 2)) > int.Parse(time.Substring(0, 2))) return true;
+            else if (int.Parse(time1.Substring(3, 2)) == int.Parse(time.Substring(3, 2)) && int.Parse(time1.Substring(0, 2)) > int.Parse(time.Substring(0, 2))) return true;
             else return false;
         }
         public void Print()
