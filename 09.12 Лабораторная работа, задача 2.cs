@@ -64,6 +64,7 @@ namespace ConsoleApp3
                     {
                         Console.WriteLine("Введите число поездов");
                         n = int.Parse(Console.ReadLine());
+                        Trains = new Train[n];
                         for (int i = 0; i < n; i++)
                         {
                             Console.WriteLine("Введите название станции");
@@ -75,29 +76,33 @@ namespace ConsoleApp3
                             Trains[i] = new Train(name, numb, time);
                             full = true;
                         }
-                        if (command == 2)
-                            if (full)
+                    }
+                    if (command == 2)
+                    {
+                        if (full)
+                        {
+                            Console.WriteLine("Введите номер поезда, данные которого  нужно модифицировать");
+                            int number = int.Parse(Console.ReadLine());
+                            foreach (Train train in Trains)
                             {
-                                Console.WriteLine("Введите номер поезда, данные которого  нужно модифицировать");
-                                int number = int.Parse(Console.ReadLine());
-                                foreach (Train train in Trains)
+                                if (train.Number == number)
                                 {
-                                    if (train.Number == number)
-                                    {
-                                        Console.WriteLine("Введите, какие данные хотите модифицировать: 1. Пункт назначения," +
-                                            "2.Номер" + "3. Время отправления");
-                                        Console.WriteLine("Введите новые данные");
-                                        string newData = Console.ReadLine();
-                                        int mod = int.Parse(Console.ReadLine());
-                                        if (mod == 1) train.End = newData;
-                                        if (mod == 2) train.Number = int.Parse(newData);
-                                        if (mod == 3) train.Time = newData;
+                                    Console.WriteLine("Введите, какие данные хотите модифицировать: 1. Пункт назначения," +
+                                        "2.Номер" + "3. Время отправления");
+                                    Console.WriteLine("Введите новые данные");
+                                    string newData = Console.ReadLine();
+                                    int mod = int.Parse(Console.ReadLine());
+                                    if (mod == 1) train.End = newData;
+                                    if (mod == 2) train.Number = int.Parse(newData);
+                                    if (mod == 3) train.Time = newData;
 
-                                    }
                                 }
                             }
-                            else Console.WriteLine("Данных нет");
-                        if (command == 3)
+                        }
+                        else Console.WriteLine("Данных нет");
+                    }
+                    if (command == 3)
+                    {
                         {
                             Console.WriteLine("Введите нужное время");
                             string time = Console.ReadLine();
@@ -108,8 +113,9 @@ namespace ConsoleApp3
                             }
                             if (!find) Console.WriteLine("Подходящих поездов нет");
                         }
-                        if (command == 4) Console.WriteLine("Работа завершена"); work = false;
+                        
                     }
+                    if (command == 4) { Console.WriteLine("Работа завершена"); work = false; }
                 }
 
             }
