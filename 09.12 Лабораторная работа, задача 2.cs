@@ -111,7 +111,11 @@ namespace ConsoleApp3
                             bool find = false;
                             foreach (Train train in Trains)
                             {
-                                if (train.isLate(time)) train.Print(); find = true;
+                                if (train.isLate(time))
+                                { 
+                                    train.Print();
+                                    find = true; 
+                                }
                             }
                             if (!find) Console.WriteLine("Подходящих поездов нет");
                         }
