@@ -104,6 +104,7 @@ namespace ConsoleApp3
                     }
                     if (command == 3)
                     {
+                        if (full)
                         {
                             Console.WriteLine("Введите нужное время");
                             string time = Console.ReadLine();
@@ -114,6 +115,7 @@ namespace ConsoleApp3
                             }
                             if (!find) Console.WriteLine("Подходящих поездов нет");
                         }
+                        else Console.WriteLine("Данных нет");
                         
                     }
                     if (command == 4) { Console.WriteLine("Работа завершена"); work = false; }
