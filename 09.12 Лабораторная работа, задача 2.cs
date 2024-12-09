@@ -85,11 +85,12 @@ namespace ConsoleApp3
                                     if (train.Number == number)
                                     {
                                         Console.WriteLine("Введите, какие данные хотите модифицировать: 1. Пункт назначения," +
-                                            "3. Время отправления");
+                                            "2.Номер" + "3. Время отправления");
                                         Console.WriteLine("Введите новые данные");
                                         string newData = Console.ReadLine();
                                         int mod = int.Parse(Console.ReadLine());
                                         if (mod == 1) train.End = newData;
+                                        if (mod == 2) train.Number = int.Parse(newData);
                                         if (mod == 3) train.Time = newData;
 
                                     }
