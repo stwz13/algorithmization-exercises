@@ -60,7 +60,7 @@ namespace ConsoleApp6
             Rider rider3 = new Rider(start);
             
             Console.WriteLine("Введите время, через которое изменится начальная скорость участников");
-            double time = int.Parse(Console.ReadLine());
+            double time = double.Parse(Console.ReadLine());
 
             while (true)
             {
