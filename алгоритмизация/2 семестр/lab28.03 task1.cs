@@ -43,9 +43,8 @@ namespace ConsoleApp3
                     PointEvent currEvent = new PointEvent();
                     currEvent.pointMessage += WrongPointMessage;
                     currEvent.OnPointMessage();
-                    return false;
-                }
-                else return true;
+                    return true;
+                else return false;
             }
         }
         class PointEvent
@@ -72,13 +71,14 @@ namespace ConsoleApp3
             Console.WriteLine("Введите максимальное абсолютное значение для приращения");
 
             int max_delta = int.Parse(Console.ReadLine());
-            int delta_x = rnd.Next(-max_delta,max_delta);
-            int delta_y = rnd.Next(-max_delta, max_delta);
+            while (true)
+            {
+                int delta_x = rnd.Next(-max_delta, max_delta);
+                int delta_y = rnd.Next(-max_delta, max_delta);
 
-
-            myPoint.Displacement(delta_x, delta_y);
-            myRectangle.ExtarnalPoint(myPoint);
-
+                myPoint.Displacement(delta_x, delta_y);
+                if myRectangle.ExtarnalPoint(myPoint) break;
+            }
         }
     }
 }
