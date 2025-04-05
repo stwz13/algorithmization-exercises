@@ -12,9 +12,7 @@ def init_matrix():
         matrix.append(curr_str)
     matrix.append((m+1)*[-1])
     return matrix
-def wave_algorithm(matrix, start, finish):
-    i_start, j_start = start
-    i_finish, j_finish = finish
+def wave_algorithm(matrix, i_start, j_start, i_finish, j_finish):
     if (matrix[i_start][j_start] == -1 or matrix[i_finish][j_finish] == -1):
         return -1
 
