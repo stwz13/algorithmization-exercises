@@ -30,4 +30,5 @@ def wave_algorithm(matrix, i_start, j_start, i_finish, j_finish):
                 if matrix[curr_i][curr_j] == 0 and (curr_i, curr_j) != (i_start, j_start):
                     matrix[curr_i][curr_j] = d + 1
                 next_vertexes.append((curr_i, curr_j))
+    print("Пути нет")
     return -1
