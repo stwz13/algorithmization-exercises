@@ -59,11 +59,12 @@ namespace ConsoleApp6
             Rider rider2 = new Rider(start);
             Rider rider3 = new Rider(start);
 
+            Console.WriteLine("Введите время, через которое изменится начальная скорость участников");
+            double time = int.Parse(Console.ReadLine());
+
             while (true)
             {
-                Console.WriteLine("Введите время, через которое изменится начальная скорость участников");
-                double time = int.Parse(Console.ReadLine());
-
+                
                 Random newRandom = new Random();
 
                 rider1.ChangeLocation(time);
