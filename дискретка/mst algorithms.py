@@ -28,7 +28,7 @@ while len(free_vertexes1)!=0:
     free_vertexes1.remove(new_vertex)
     tree1.append(new_vertex)
     ans1+=mn
-
+print(ans1)
 #алгоритм Краскала
 free_vertexes2 = []
 
@@ -60,7 +60,4 @@ print(ans2)
 
 
 
-
-
-print((ans))
 
