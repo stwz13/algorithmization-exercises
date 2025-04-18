@@ -77,7 +77,7 @@ def little_algorithm(matrix):
             if element[0] == ans_way[-1]:
                 ans_way.append(element[1])
                 break
-
+    ans_way.append(ans_way[0])
     len_way = sum(int(old_matrix[ans_way[i], ans_way[i+1]]) for i in range(len(ans_way)-1))
     return ans_way, len_way
 
