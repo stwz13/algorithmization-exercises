@@ -1,4 +1,4 @@
-﻿/*
+﻿
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,7 +6,7 @@ using System.IO;
 
 namespace ConsoleApp6
 {
-    class coding
+    class task1
     {
 
         static void Print(int[,] image)
@@ -106,4 +106,5 @@ namespace ConsoleApp6
         }
     }
 }
-*/
+
+

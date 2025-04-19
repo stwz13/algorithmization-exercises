@@ -1,10 +1,10 @@
-﻿/*
+﻿
 using System;
 using System.IO;
 
 namespace ConsoleApp6
 {
-    class rgr1
+    class task4
     {
         static void Main(string[] args)
         {
@@ -57,4 +57,5 @@ namespace ConsoleApp6
         }
     }
 }
-*/
+
+

@@ -1,4 +1,4 @@
-﻿/*
+﻿
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,7 +7,7 @@ using System.IO;
 namespace ConsoleApp6
 {
    
-    class rgr3
+    class task3
     {
         static void Main(string[] args)
         {
@@ -116,4 +116,5 @@ namespace ConsoleApp6
         }
     }
 }
-*/
+
+

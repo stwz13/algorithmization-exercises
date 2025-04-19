@@ -6,7 +6,7 @@ using System.IO;
 
 namespace ConsoleApp6
 {
-    class rgr2
+    class task2
     {
         class Point
         {
@@ -21,9 +21,9 @@ namespace ConsoleApp6
         static int Orientation(Point firstPoint, Point secondPoint, Point currPoint)
         {
             int vecrMultX = (secondPoint.x - currPoint.x) * (firstPoint.y - currPoint.y) - (secondPoint.y - currPoint.y) * (firstPoint.x - currPoint.x);
-            if (vecrMultX < 0) return 1; //вправо
-            else if (vecrMultX > 0) return -1; //влево
-            else return 0; //коллиниарны
+            if (vecrMultX < 0) return 1;
+            else if (vecrMultX > 0) return -1; 
+            else return 0; 
 
         }
         static void ChoosingStartPoint(List<Point> points)
