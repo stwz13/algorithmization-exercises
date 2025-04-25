@@ -76,3 +76,8 @@ def little_algorithm(matrix):
                     ans_way.insert(i, finded_way[0])
     len_way = sum(old_matrix[ans_way[i], ans_way[i+1]] for i in range(len(ans_way)-1))
     return ans_way, len_way
+
+
+
+matrix = init_matrix()
+way, len_way = little_algorithm(matrix)

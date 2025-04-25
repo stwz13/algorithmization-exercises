@@ -44,6 +44,7 @@ namespace ConsoleApp3
                     currEvent.pointMessage += WrongPointMessage;
                     currEvent.OnPointMessage();
                     return true;
+                }
                 else return false;
             }
         }
@@ -77,7 +78,7 @@ namespace ConsoleApp3
                 int delta_y = rnd.Next(-max_delta, max_delta);
 
                 myPoint.Displacement(delta_x, delta_y);
-                if myRectangle.ExtarnalPoint(myPoint) break;
+                if (myRectangle.ExtarnalPoint(myPoint)) break;
             }
         }
     }
