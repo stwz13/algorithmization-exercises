@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -58,13 +60,13 @@ namespace ConsoleApp6
             Rider rider1 = new Rider(start);
             Rider rider2 = new Rider(start);
             Rider rider3 = new Rider(start);
-
+            
             Console.WriteLine("Введите время, через которое изменится начальная скорость участников");
-            double time = int.Parse(Console.ReadLine());
+            double time = double.Parse(Console.ReadLine());
 
             while (true)
             {
-                
+
                 Random newRandom = new Random();
 
                 rider1.ChangeLocation(time);
